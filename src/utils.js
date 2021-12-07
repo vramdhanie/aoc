@@ -1,11 +1,11 @@
 const fs = require("fs");
 
-function readArray(fileName) {
-  return fs.readFileSync(fileName, "utf8").split("\n");
+function readArray(fileName, sep = "\n") {
+  return fs.readFileSync(fileName, "utf8").split(sep);
 }
 
-function readIntArray(fileName) {
-  return readArray(fileName).map(Number);
+function readIntArray(fileName, sep = "\n") {
+  return readArray(fileName, sep).map(Number);
 }
 
 module.exports = {
