@@ -14,7 +14,6 @@ function day06_1(input) {
       }
     }
     fish.push(...newFish);
-    //console.log(`After ${i} day: ${fish.join(", ")}`);
   }
   return fish.length;
 }
